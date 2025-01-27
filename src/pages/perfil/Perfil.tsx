@@ -9,13 +9,6 @@ function Perfil() {
 
     const { usuario } = useContext(AuthContext)
 
-    useEffect(() => {
-        if (usuario.token === "") {
-            alert('Você precisa estar logado')
-            navigate("/")
-        }
-    }, [usuario.token])
-
     return (
         <div className='container mx-auto m-4 rounded-2xl overflow-hidden'>
 
